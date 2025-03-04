@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+  <title>survey-form</title>
+  <style> 
+  body{
+    background-size:cover;
+    color: #fff59ff9;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+   
+    background-image:url("pexels-brigitte-tohm-36757-287222.jpg");
+    overflow-x:hidden;
+    
+    padding:2% ;
+    margin-right:50%;
+  }
+</style>
+  <body>
+    <h1 id="title">SYD Survey Form</h1>
+    <p id="description" class="description">Thank you for rating</p>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+  <input type="text" id="name" placeholder="Enter your name" required class="form-control">
+  </div>
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your Email" required class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="age">Age<span class="clue">(optional)</span></label>
+      <input type="number" id="number" name="age" placeholder="Age" min ="10" max="99" class="form-control">
+      </div>
+      
+      <div class="form-group">
+        <p>One thing you like about Australia?</p>
+        <select name="role" id="dropdown" class="form-control" required>
+          <option selected disabled value>Select any one</option>
+          <option>Weather</option>
+          <option>Beaches</option>
+          <option>Food</option>
+          <option>Prefer not say</option>
+          <option>Other</option>
+          </select>
+      </div>
+      <div class="form-group">
+      <p>Do you want to Move to Australia?</p>
+      <label><input 
+      type="radio"
+      class="input-radio"
+      value="Yes, Of course"
+      name="choose-one">Yes, Of course</label><br/>
+      <label>
+      <input 
+      type="radio"
+      class="input-radio"
+      value="Nooooo!"
+      name="choose-one">Nooooo!</label><br/>
+
+       <label>
+      <input 
+      type="radio"
+      class="input-radio"
+      value="Maybe!"
+      name="choose-one">Maybe!</label><br/>
+      </div>
+
+      <div class="form-group">
+        <p>What are the countries you would like to visit in 2024?</p>
+          <label>
+          <input 
+          type="checkbox"
+          class="input-checkbox"
+          value="US"
+          name="choose-many">US</label><br/>
+
+          <label>
+          <input 
+          type="checkbox"
+          class="input-checkbox"
+          value="Aus"
+          name="choose-many">Australia</label><br/>
+
+          <label>
+          <input 
+          type="checkbox"
+          class="input-checkbox"
+          value="Spain"
+          name="choose-many">Spain</label><br/>
+
+          <label>
+          <input 
+          type="checkbox"
+          class="input-checkbox"
+          value="Swiss"
+          name="choose-many">Switzerland</label><br/>
+
+          <label>
+          <input 
+          type="checkbox"
+          class="input-checkbox"
+          value="other"
+          name="choose-many">other</label><br/>
+
+          </div>
+          <div class="form-group">
+            <p>Explain briefly why do tou want to visit the country?
+            <label>
+            <textarea
+            
+            class="input-textarea"
+            placeholder ="Write in 100 words or more...." 
+            name="explain"></textarea>
+
+            </label>
+            </p>
+            </div>
+            <br/>
+            <div class="form-group">
+            
+              <button 
+              type="submit"
+              class="submit-buttom"
+              name="submit-form"
+              id="submit">Submit</botton>
+              </button></div>
+              </form>
+
+
+              </body>
+  </html>

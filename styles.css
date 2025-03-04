@@ -1,0 +1,143 @@
+
+.description{
+  
+  font-style:italic;
+
+}
+input, select{
+  width:100%;
+  display:inline-block;
+  margin-bottom:3%;
+}
+
+.form-group{
+border-radius: 5px;
+background-color: #351f2200;
+padding: 20px;
+margin-bottom: -5%;
+}
+.input-radio{
+  display:inline-block;
+  width:5%;
+  margin-right:50px;
+  
+}
+.input-checkbox{
+  display: inline-block;
+  width:5%;
+
+}
+.nav-container{
+  position:relative;
+}
+
+.nav-toggle{
+  display:none;
+ 
+}
+
+.nav-toggle-label{
+  position:absolute;
+  top: 15px;
+  left:15px;
+  width:30px;
+  height: 30px;
+  cursor:pointer;
+  z-index: 2;
+}
+
+.nav-togglr-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  display:block;
+  background-color: #f10a0a;
+  height:3px;
+  width:100%;
+  border-radius: 3px;
+  position: absolute;
+  transition:  0.3s;
+  
+}
+
+.nav-toggle-label span::before{
+  content:"";
+  top: -8px;
+}
+
+.nav-toggle-label span::after{
+  content:"";
+  top: 8px;
+  
+
+}
+
+.nav{
+  position:absolute;
+  top:0;
+  left:0;
+  width:250px;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.829);
+  
+ 
+  transform: translate(-120%);
+  transition:0.3s;
+  z-index:1;
+}
+
+.nav ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  margin-top:50px;
+
+}
+
+.nav ul li {
+  margin:20px 0;
+}
+
+.nav ul li a {
+  text-decoration:none;
+  color:#bfc9cd;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: block;
+  transition:0.3s;
+  
+
+}
+
+.nav ul li a:hover{
+  
+    font-size: 150%;
+  
+
+}
+
+.nav-toggle:checked + .nav-toggle-label span{
+  background-color: transparent;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::before{
+  transform: rotate(45deg);
+  top:0;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::after{
+  transform: rotate(-45deg);
+  top: 0;
+  
+}
+
+
+.nav-toggle:checked ~ .nav{
+  transform: translate(-10px);
+}
+
+.blurred {
+  filter: blur(5px); /* Adjust blur value as needed */
+  transition: filter 0.3s;
+  
+}
